@@ -21,7 +21,6 @@
       <change afterPath="$PROJECT_DIR$/antipyretic/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/antipyretic/views.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dyplom" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/landing/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/landing/admin.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/landing/forms.py" afterDir="false" />
@@ -55,7 +54,6 @@
       <change afterPath="$PROJECT_DIR$/orders/models.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/orders/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/orders/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pharm" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/products/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/products/admin.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/products/forms.py" afterDir="false" />
@@ -69,8 +67,10 @@
       <change afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/4.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/static/basket1.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/static/landing.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/main.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/static/media/product_images/analgin.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/static/media/product_images/ascorbinovaya.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/static/media/product_images/ascorbinovaya_7eAn7st.jpg" afterDir="false" />
@@ -101,9 +101,12 @@
       <change afterPath="$PROJECT_DIR$/static/media/product_images/пирацетам.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/static/media/product_images/пирацетам_c7ncGE5.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/static/media/product_images/пирацетам_hxZBthF.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/slider_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/order.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/static/static_dev/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/static_dev/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tabl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/truck.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/галочка.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/templates/info/about.html" afterDir="false" />
