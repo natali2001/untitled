@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'nerves',
     'vitamins',
     'sweetify',
+    'liqpay',
 ]
 
 MIDDLEWARE = [
