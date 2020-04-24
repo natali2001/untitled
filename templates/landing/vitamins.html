@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+ <div class="section section4 vitamin-container">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+                <h1 class="nadpis">
+                    Витамины и Бады
+                </h1>
+                <hr></hr>
+            </div>
+
+              {% for product_image in products_images_vitamin %}
+                  {% include 'landing/product_item.html' %}
+              {% endfor %}
+
+          </div>
+      </div>
+    </div>
+{% endblock %}

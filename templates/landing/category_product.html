@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <div class="section section2 cold-container">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+                <h1 class="nadpis">
+                    Жаропонижающие
+                </h1>
+                <hr></hr>
+            </div>
+
+              {% for product_image in products_images_cold %}
+                 {% include 'landing/product_item.html' %}
+              {% endfor %}
+
+          </div>
+      </div>
+    </div>
+
+
+{% endblock %}

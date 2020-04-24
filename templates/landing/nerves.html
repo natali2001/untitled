@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="section section3 nerves-container">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+                <h1 class="nadpis">
+                    Для нервной системы
+                </h1>
+                <hr></hr>
+            </div>
+
+              {% for product_image in products_images_nerves %}
+                  {% include 'landing/product_item.html' %}
+              {% endfor %}
+
+          </div>
+      </div>
+    </div>
+{% endblock %}
