@@ -13,7 +13,7 @@ def get(self, request, *args, **kwargs):
         'action': 'pay',
         'amount': '100',
         'currency': 'USD',
-        'description': 'Payment for clothes',
+        'description': 'Payment for medicines',
         'order_id': 'order_id_1',
         'version': '3',
         'sandbox': 1, # sandbox mode, set to 1 to enable it
