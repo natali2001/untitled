@@ -27,6 +27,11 @@
                       Цена: {{ product.price }} грн.
                   </h4>
               </div>
+                   <div>
+                  <h4>
+                      В наличии: {{ product.quantity }} шт.
+                  </h4>
+              </div>
                    <label>Введите количество препаратов:</label>
                     <form id="form_buying_product" class="form-inline" action="{% url 'basket_adding' %}">{% csrf_token %}
                         <div class="form-group">
@@ -51,7 +56,11 @@
                        <div class="lefting">
                            <p class="nadpis">Описание</p>
                            <hr></hr>
-                          <p>  {{ product.description|linebreaks }} </p>
+                          <p>  {{ product.short_description }} </p>
+                           <p> Производитель: {{ product.manufacturer }} </p>
+                           <p> Форма выпуска: {{ product.dosage_form }} </p>
+                           <p> Действующее вещество: {{ product.active_substance }} </p>
+                           <p> Фармакологическое действие: {{ product.pharmachologic_effect }} </p>
                        </div>
   </div>
   </div>

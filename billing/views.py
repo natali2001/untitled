@@ -16,7 +16,7 @@ def get(self, request, *args, **kwargs):
         'description': 'Payment for clothes',
         'order_id': 'order_id_1',
         'version': '3',
-        'sandbox': 0, # sandbox mode, set to 1 to enable it
+        'sandbox': 1, # sandbox mode, set to 1 to enable it
         'server_url': 'https://test.com/billing/pay-callback/', # url to callback view
     }
     signature = liqpay.cnb_signature(params)
@@ -26,10 +26,10 @@ def get(self, request, *args, **kwargs):
 @method_decorator(csrf_exempt, name='dispatch')
 class PayCallbackView(View):
     def post(self, request, *args, **kwargs):
-        liqpay = LiqPay(settings.LIQPAY_PUBLIC_KEY, settings.LIQPAY_PRIVATE_KEY)
+        liqpay = LiqPay(settings.sandbox_i26660223217, settings.sandbox_u3BM9ppkXfPn0Phd5ZNhpkzieRiVWHmq12iJUJYb)
         data = request.POST.get('data')
         signature = request.POST.get('signature')
-        sign = liqpay.str_to_sign(settings.LIQPAY_PRIVATE_KEY + data + settings.LIQPAY_PRIVATE_KEY)
+        sign = liqpay.str_to_sign(settings.sandbox_i26660223217 + data + settings.sandbox_u3BM9ppkXfPn0Phd5ZNhpkzieRiVWHmq12iJUJYb)
         if sign == signature:
             print('callback is valid')
         response = liqpay.decode_data_from_str(data)

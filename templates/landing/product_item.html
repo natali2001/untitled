@@ -14,9 +14,10 @@
                         {% endif %}
                       <h4>{{ product_image.product.name }}</h4>
                         <p>
-                            {{ product_image.product.description |truncatechars_html:70 }}
+                            {{ product_image.product.short_description |truncatechars_html:70 }}
                         </p>
                         <div>
+                             {{ product_image.product.quantity }} шт.
                             {{ product_image.product.price }} грн.
                         </div>
                     </div>
