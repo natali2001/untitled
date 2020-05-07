@@ -59,7 +59,8 @@ def checkout(request):
         'currency': 'USD',
         'description': 'description text',
         'order_id': 'order_id_1',
-        'version': '3'
+        'version': '3',
+        'result_url': 'http://127.0.0.1:8000/'
     })
     if request.POST:
         print(request.POST)
