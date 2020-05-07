@@ -3,6 +3,7 @@ from .models import *
 from django.shortcuts import render
 from .forms import *
 from django.contrib.auth.models import User
+from liqpay.liqpay import LiqPay
 
 
 def basket_adding(request):
@@ -51,6 +52,15 @@ def checkout(request):
 
 
     form = CheckoutContactForm(request.POST or None)
+    liqpay = LiqPay("public_key", "private_key")
+    html1 = liqpay.cnb_form({
+        'action': 'pay',
+        'amount': '1',
+        'currency': 'USD',
+        'description': 'description text',
+        'order_id': 'order_id_1',
+        'version': '3'
+    })
     if request.POST:
         print(request.POST)
         if form.is_valid():
