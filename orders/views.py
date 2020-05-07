@@ -52,7 +52,7 @@ def checkout(request):
 
 
     form = CheckoutContactForm(request.POST or None)
-    liqpay = LiqPay("public_key", "private_key")
+    liqpay = LiqPay("sandbox_i26660223217", "sandbox_u3BM9ppkXfPn0Phd5ZNhpkzieRiVWHmq12iJUJYb")
     html1 = liqpay.cnb_form({
         'action': 'pay',
         'amount': '1',
