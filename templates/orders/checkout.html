@@ -12,7 +12,7 @@
                     <!--<h5 class="text-center">Общая стоимость: {{ request.session.basket.total_amount }} грн </h5>
                             {{ request.session.basket.products }}--!>
 
-                    <form class="form-horizontal" method="post">{% csrf_token %}
+                    <!-- <form class="form-horizontal" method="post">{% csrf_token %} -->
 
                             <div class="form-group">
                                 <div class="col-lg-4">
@@ -91,7 +91,8 @@
                             <button onclick="alert('Ваш заказ оформлен')" type="submit" class="btn btn-primary btn-lg">Заказать</button>
                         </div>
 
-                    </form>
+                        {{ html1|safe }}
+                    <!-- </form> -->
 
                 </div>
              {% else %}
