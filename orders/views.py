@@ -58,7 +58,7 @@ def checkout(request):
         'amount': '1',
         'currency': 'USD',
         'description': 'description text',
-        'order_id': 'order_id_1',
+        'order_id': 'session_key',
         'version': '3',
         'result_url': 'http://127.0.0.1:8000/'
     })
@@ -71,7 +71,8 @@ def checkout(request):
             phone = data["phone"]
             user, created = User.objects.get_or_create(username=phone, defaults={"first_name": name})
 
-            order = Order.objects.create(user=user, customer_name=name, customer_phone=phone, status_id=1)
+            order = Order.objects.create(user=user, customer_name=name, customer_phone=phone, customer_address=address, status_id=1)
+
 
             for name, value in data.items():
                 if name.startswith("product_in_basket_"):
