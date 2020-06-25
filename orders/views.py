@@ -55,10 +55,10 @@ def checkout(request):
     liqpay = LiqPay("sandbox_i26660223217", "sandbox_u3BM9ppkXfPn0Phd5ZNhpkzieRiVWHmq12iJUJYb")
     html1 = liqpay.cnb_form({
         'action': 'pay',
-        'amount': '1',
+        'amount': '5',
         'currency': 'USD',
         'description': 'description text',
-        'order_id': 'session_key',
+        'order_id': 'order_id_52',
         'version': '3',
         'result_url': 'http://127.0.0.1:8000/'
     })
